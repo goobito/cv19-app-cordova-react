@@ -8,3 +8,7 @@ typings/
 .DS_Store
 .vscode/
 *.code-workspace
+
+# Ignore the www folder because it is now BUILT as part of our deployment process.
+# Our app code now lives under /public and /src.
+www
