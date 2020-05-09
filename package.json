@@ -1,31 +1,53 @@
 {
-  "name": "com.cv19.app",
-  "displayName": "CV19APP",
-  "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "ecosystem:cordova"
-  ],
-  "author": "Apache Cordova Team",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "cordova-android": "^8.1.0",
-    "cordova-plugin-geolocation": "^4.0.2"
-  },
-  "devDependencies": {
-    "cordova-plugin-whitelist": "^1.3.4"
-  },
-  "cordova": {
-    "plugins": {
-      "cordova-plugin-whitelist": {},
-      "cordova-plugin-geolocation": {}
-    },
-    "platforms": [
-      "android"
-    ]
-  }
+	"name": "com.cv19.app",
+	"displayName": "CV19APP",
+	"version": "1.0.0",
+	"description": "A sample Apache Cordova application that responds to the deviceready event.",
+	"main": "index.js",
+	"scripts": {
+		"test:default": "echo \"Error: no test specified\" && exit 1",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"keywords": [
+		"ecosystem:cordova"
+	],
+	"author": "Apache Cordova Team",
+	"license": "Apache-2.0",
+	"dependencies": {
+		"cordova-android": "^8.1.0",
+		"cordova-plugin-geolocation": "^4.0.2",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.5.0",
+		"@testing-library/user-event": "^7.2.1",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-scripts": "3.4.1"
+	},
+	"devDependencies": {
+		"cordova-plugin-whitelist": "^1.3.4"
+	},
+	"cordova": {
+		"plugins": {
+			"cordova-plugin-whitelist": {},
+			"cordova-plugin-geolocation": {}
+		},
+		"platforms": [
+			"android"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
