@@ -70,7 +70,8 @@ INDEX.HTML: CONFIGURE CORDOVA in public/index.html
 
 Add to <HEAD> section:
 
-<pre>`<meta http-equiv="Content-Security-Policy"
+<pre><code>
+<meta http-equiv="Content-Security-Policy"
      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
    />
    <meta name="format-detection" content="telephone=no" />
@@ -78,7 +79,8 @@ Add to <HEAD> section:
    <meta
      name="viewport"
      content="initial-scale=1, width=device-width, viewport-fit=cover"
-   />`</pre>
+   />
+   </code></pre>
 
 Load Cordova, before `</BODY>`:
 
