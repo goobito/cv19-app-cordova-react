@@ -70,7 +70,7 @@ INDEX.HTML: CONFIGURE CORDOVA in public/index.html
 
 Add to <HEAD> section:
 
-<pre>
+<code>
 <meta http-equiv="Content-Security-Policy"
      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
    />
@@ -80,9 +80,9 @@ Add to <HEAD> section:
      name="viewport"
      content="initial-scale=1, width=device-width, viewport-fit=cover"
    />
-</pre>
+</code>
 
-Load Cordova , before </BODY>:
+Load Cordova, before `</BODY>`:
 
 <pre>
    <script src="cordova.js" type="text/javascript"></script>
