@@ -68,19 +68,20 @@ At this point we have our Cordva App and our react in the same project and caan 
 
 INDEX.HTML: CONFIGURE CORDOVA in public/index.html
 
-Add to <HEAD> section:
+Add to `<HEAD>` section:
 
-<pre><code>
-<meta http-equiv="Content-Security-Policy"
-     content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
-   />
-   <meta name="format-detection" content="telephone=no" />
-   <meta name="msapplication-tap-highlight" content="no" />
-   <meta
-     name="viewport"
-     content="initial-scale=1, width=device-width, viewport-fit=cover"
-   />
-   </code></pre>
+```html
+<meta
+	http-equiv="Content-Security-Policy"
+	content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta
+	name="viewport"
+	content="initial-scale=1, width=device-width, viewport-fit=cover"
+/>
+```
 
 Load Cordova, before `</BODY>`:
 
